@@ -1,3 +1,6 @@
+# 2025 Notice
+
+
 # 2024 Notice
 - HW1 체커를 추가했습니다.
 - HW2 체커를 추가했습니다.
@@ -10,7 +13,7 @@
 - HW8 체커를 추가했습니다.
 
 # pl-checker
-2024년 봄학기 Programming Language 숙제 자동 채점기 <br>
+2025년 봄학기 Programming Language 숙제 자동 채점기 <br>
 [Jhuni의 채점기](https://github.com/Jhuni0123/pl-checker) 에 기반해서 만들어진 채점기입니다.<br>
 
 채점의 **자동화**를 목표로 하고있습니다. 최대한 많은 경우를 테스트 하게 하려고 노력하고 있지만 커버되지 않는 케이스가 있을 수 있습니다. 즉 여기 있는 테스트 케이스를 **모두 통과해도 만점을 받는것을 보장하지 못합니다.** <br>
@@ -19,9 +22,9 @@
 # How to use
 unix 기반 환경을 필요로 합니다
 ```bash
-git clone https://github.com/coffeetea99/pl-checker
+git clone https://github.com/IHIHHIHI/pl-checker
 cd pl-checker
-cd ./2024/hw<num>
+cd ./2025/hw<num>
 # please read README.md
 ./check
 ```
@@ -40,6 +43,7 @@ git pull --rebase origin master
 - [kjp4155](https://github.com/kjp4155)
 - [Leeingnyo](https://github.com/Leeingnyo)
 - [sanggggg](https://github.com/sanggggg)
+- [coffeetea99](https://github.com/coffeetea99)
 - All students sharing testcases
 - All TAs in PL lecture
 
