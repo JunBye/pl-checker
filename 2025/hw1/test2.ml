@@ -1,8 +1,8 @@
-(* Exercise 1. sigma *)
-open Ex1
+(* Exercise 2. sigma *)
+open Ex2
 open Testlib
 
-module TestEx1: TestEx =
+module TestEx2: TestEx =
   struct
     type testcase =
       | SIGMA of int * int * (int -> int) * string * int
@@ -33,5 +33,5 @@ module TestEx1: TestEx =
           )
   end
 
-open TestEx1
+open TestEx2
 let _ = wrapper testcases runner string_of_tc

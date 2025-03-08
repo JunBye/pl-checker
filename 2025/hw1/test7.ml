@@ -1,8 +1,8 @@
-(* Exercise 5. crazy3add *)
-open Ex5
+(* Exercise 7. crazy3add *)
+open Ex7
 open Testlib
 
-module TestEx5: TestEx =
+module TestEx7: TestEx =
   struct
     type testcase =
       | ADD of string * string * int
@@ -96,5 +96,5 @@ module TestEx5: TestEx =
           )
   end
 
-open TestEx5
+open TestEx7
 let _ = wrapper testcases runner string_of_tc

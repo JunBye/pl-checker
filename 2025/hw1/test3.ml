@@ -1,8 +1,8 @@
-(* Exercise 2. iter *)
-open Ex2
+(* Exercise 3. iter *)
+open Ex3
 open Testlib
 
-module TestEx2: TestEx =
+module TestEx3: TestEx =
   struct
     type 'a tc = int * ('a -> 'a) * string * 'a * 'a
     and testcase =
@@ -50,5 +50,5 @@ module TestEx2: TestEx =
       | INT_QUADRAPLE(n, f, fs, x, ans) -> (base n fs (string_of_iqp x), string_of_iqp ans, string_of_iqp (iter(n,f) x))
   end
 
-open TestEx2
+open TestEx3
 let _ = wrapper testcases runner string_of_tc

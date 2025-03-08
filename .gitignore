@@ -11,6 +11,7 @@ ex*.ml
 hw9
 .DS_Store
 _check
+*.py
 
 k.ml
 run

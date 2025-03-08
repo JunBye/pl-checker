@@ -1,8 +1,8 @@
-(* Exercise 4. crazy3val *)
-open Ex4
+(* Exercise 6. crazy3val *)
+open Ex6
 open Testlib
 
-module TestEx4: TestEx =
+module TestEx6: TestEx =
   struct
     type testcase =
       | CRAZY3 of string * int
@@ -74,5 +74,5 @@ module TestEx4: TestEx =
       | CRAZY3 (str, ans) -> ("crazy3val " ^ str, string_of_int ans, string_of_int (crazy3val (crazy3_of_string str)))
   end
 
-open TestEx4
+open TestEx6
 let _ = wrapper testcases runner string_of_tc

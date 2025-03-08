@@ -1,9 +1,9 @@
-(* Exercise 3. eval formula *)
-open Ex3
+(* Exercise 5. eval formula *)
+open Ex5
 open Testlib
 open Printf
 
-module TestEx3: TestEx =
+module TestEx5: TestEx =
   struct
     type testcase =
       | EVAL of formula * bool
@@ -77,5 +77,5 @@ module TestEx3: TestEx =
       | EVAL (f, ans) -> (string_of_fomula f, string_of_bool ans, string_of_bool (eval f))
   end
 
-open TestEx3
+open TestEx5
 let _ = wrapper testcases runner string_of_tc
