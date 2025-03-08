@@ -18,3 +18,5 @@ run
 parser.ml
 parser.mli
 lexer.ml
+
+/hello
