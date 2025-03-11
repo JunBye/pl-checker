@@ -48,6 +48,17 @@ module TestEx5: TestEx =
       ; EVAL (LESS (MINUS (NUM 3, NUM 5), MINUS (NUM 1, NUM 2)), true)
       ; EVAL (ORELSE (LESS (PLUS (MINUS (NUM 3, NUM 2), NUM 9), NUM 10), FALSE), false)
       ; EVAL (IMPLY (LESS (NUM 1, NUM 0), ANDALSO (TRUE, ORELSE (NOT TRUE, LESS (NUM 2, NUM 1)))), true)
+      ; EVAL (NOT (NOT (NOT (NOT TRUE))), true)
+      ; EVAL (LESS (MINUS (NUM 0, MINUS (NUM 0, NUM 0)), NUM 0), false)
+      ; EVAL (LESS (PLUS (NUM (-5), NUM (-5)), MINUS (NUM 0, NUM 11)), false)
+      ; EVAL (LESS (MINUS (PLUS (NUM 100, NUM (-50)), NUM 25), PLUS (NUM 0, NUM 26)), true)
+      ; EVAL (IMPLY (IMPLY (TRUE, FALSE), FALSE), true)
+      ; EVAL (IMPLY (IMPLY (FALSE, FALSE), FALSE), false)
+      ; EVAL (ANDALSO (ORELSE (NOT FALSE, FALSE), IMPLY (TRUE, ORELSE (TRUE, FALSE))), true)
+      ; EVAL (ORELSE (ANDALSO (NOT TRUE, TRUE), ANDALSO (FALSE, NOT FALSE)), false)
+      ; EVAL (LESS (PLUS (NUM 3, MINUS (NUM 10, PLUS (NUM 2, NUM 3))), MINUS (NUM 10, PLUS (NUM 1, NUM 2))), false)
+      ; EVAL (LESS (MINUS (PLUS (NUM 20, NUM (-5)), NUM 10), PLUS (MINUS (NUM 10, NUM 5), NUM 0)), false)
+      ; EVAL (IMPLY (NOT (IMPLY (FALSE, TRUE)), TRUE), true)
       ]
 
     let rec string_of_expr e =
