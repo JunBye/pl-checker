@@ -118,7 +118,7 @@ module TestEx4: TestEx =
       match id with
       | A -> "A"
       | B -> "B"
-      | C -> "B"
+      | C -> "C"
       | D -> "D"
       | E -> "E"
     
